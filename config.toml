@@ -1,0 +1,68 @@
+baseurl = "https://example.org/"
+title = "TecnoEspigares"
+theme = "hugo-nederburg-theme-master"
+languageCode = "en-us"
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+preserveTaxonomyNames = true
+paginate = 5 #frontpage pagination
+
+[privacy]
+  # Google Analytics privacy settings - https://gohugo.io/about/hugo-and-gdpr/index.html#googleanalytics
+  [privacy.googleAnalytics]
+    # set to true to disable service 
+    disable = false
+    # set to true to meet General Data Protection Regulation (GDPR)
+    anonymizeIP = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+
+[params]
+  # Unmark to use post folder for images. Default is static folder.
+  #usepostimgfolder = true
+  slogan = "Toda la actualidad en tecnología e informática"
+  # You need to set author to have an author bio. If you have a writer in the markdown file it will override this.
+  copyright = [
+    "&copy; 2022 Pedro Espigares",
+    "Nederburg Hugo Theme by [Appernetic](https://appernetic.io).",
+    "A port of Tracks by Compete Themes."
+  ]
+
+
+  # Contact page
+     # Since this template is static, the contact form uses www.formspree.io as a
+     # proxy. The form makes a POST request to their servers to send the actual
+     # email. Visitors can send up to a 1000 emails each month for free.
+     #
+     # What you need to do for the setup?
+     #
+     # - set your email address under 'email' below (it is also used in Gravatar for the bio).
+     # - upload the generated site to your server
+     # - send a dummy email yourself to confirm your account
+     # - click the confirm link in the email from www.formspree.io
+     # - you're done. Happy mailing!
+  email = "pedritoesp04@gmail.com"
+
+  # Nav links in the side bar
+  [[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+  [[menu.main]]
+  name = "Sobre Mí"
+  url = "about/"
+  weight = 2
+
+  [[menu.main]]
+  name = "Contacto"
+  url = "contact/"
+  weight = 3
+
+# this will also be in author bio if there is no writer.
+  [params.social]
+  email         = "pedritoesp04@gmail.com"
+  twitter       = "https://twitter.com/pedro_espigares"
+  instagram     = "https://www.instagram.com/pedro_espigares/"
